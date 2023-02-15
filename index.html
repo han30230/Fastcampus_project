@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<style>
+		
+		.box1{
+			height:280px;
+			width:1000px;
+			/* padding-top : 5px; */
+			/* margin-top :200px ;  */
+		}
+		.text_margin1
+		{
+			margin-left : 30px;
+			padding-top: 20px;
+			/* margin-top:10px; */
+		}
+		.text_margin2
+		{
+			margin-left : 30px;
+
+		}
+		.text_margin3
+		{
+			margin-left : 60px;
+		}
+		.float1
+		{
+			float:left;
+		}
+		.box2{
+			width : 300px;
+			height:100px;
+			border : 2px solid black
+		}
+
+		dt {
+    		display: block;
+  			margin-top: 1em;}
+		.static{left:200px}
+		.relative{position:relative;
+				 left:200px;
+				 bottom:200px;
+				top:200px;}
+		.absolute{position : absolute;
+				left:500px;
+
+				margin-top : 550px;
+			}
+		.fixed{
+			position :fixed; top:500px; left:100px;
+		}
+		.box3{
+			width : 300px;
+			height:130px;
+			padding: 10px;
+
+		}
+		.foot_box{
+			height:130px;
+			padding: 30px;
+		}
+		.top_box{
+			/* height : 50px;
+			padding:10px;
+			padding-left:50px; */
+			width:1500px; 
+			height:50px;
+			position :fixed; 
+			top:0px;
+			/* margin-bottom : 200px; */
+			padding:20px;
+			/* margin-top : 100px; */
+			
+		}
+		.box {
+ 		width: 200px; 
+  		height: 50px;
+  		background-color: red;
+ 		animation-name: example;
+  		animation-duration: 2s;
+  		animation-iteration-count: 5;
+		}
+		.init_box{
+		width: 200px; 
+  		height: 50px;	
+		background-color: red;
+		}
+		.box_test
+		{
+			margin-top:100px;
+		}
+
+
+		.slideshow-container {
+			position: relative;
+			width: 100%;
+			height: 500px;
+			margin: 0 auto;
+			overflow: hidden;
+			}
+
+			.mySlides {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			transition: opacity 1s ease-in-out;
+			}
+
+			.mySlides.fade {
+			opacity: 1;
+			}
+
+			.slideshow-container:hover .mySlides {
+			opacity: 0.5;
+			}
+
+			.slideshow-container:hover .mySlides:hover {
+			opacity: 1;
+			}
+
+			@keyframes example {
+			0%   {background-color: red; transform: rotate(0deg);}
+			50%  {background-color: yellow; transform: rotate(180deg);}
+			100% {background-color: red; transform: rotate(360deg);}
+			}
+
+			#popup {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			}
+
+			#popup.show {
+			opacity: 1;
+			}
+
+		#closeBtn {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		border: none;
+		background-color: transparent;
+		font-size: 24px;
+		cursor: pointer;
+		}
+	</style>
+	<head>
+		<link rel="icon" href="icons8-favorite-64.png" type="image/x-icon">
+		<link rel="shortcut icon" href="icons8-favorite-64.png" type="image/x-icon">
+		
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="icon" href="./icons8-favorite-32.png" type="image/x-icon"> 
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<meta property="og:type" />
+		<meta property="og:site_name" />
+		<meta property="og:title" />
+		<meta property="og:description" />
+		<meta property="og:image" />
+
+		<title></title>
+
+		<link rel="stylesheet" />
+
+		<link rel="icon" />
+	</head>
+	<body class=" box_text">
+		<div class="box_test">
+			<header class="bootstrap-header lh-1 py-3">
+				<div class="row flex-nowrap justify-content-between align-items-center">
+					<h1  style="background-color : rgb(216, 223, 228);" class="text-left top_box">
+						<a  class="bootstrap-header-logo text-dark" 
+							>Hello</a>
+							<a  style="font-size: 20px; color: rgb(107, 115, 115);"> 경력 취미 기타 </a>
+							<!-- 👋 -->
+					</h1>
+				</div>
+			</header>
+		</div>
+
+		<main class="box_test">
+			<div class="box1 p-4 p-md-5 mb-4 rounded text-bg-dark "  >
+				<div class="col-md-6 px-0 box1" style="background-color:rgb(53, 50, 50);"" >
+
+					<h1 class="text_margin1 " >
+						<div class="text_margin1" style="color: rgb(255, 255, 255); ">Bootstrap을 활용해 퍼스널 </div>
+						<div class="text_margin2" style="color: rgb(255, 255, 255); ">브랜딩 페이지 만들기 </div>
+					</h1>
+					<p class="lead my-3 text_margin3 " style="color: rgb(255, 255, 255);">
+						다양한 태그와 라이브러리를 사용하여 자유롭게 표현
+					</p>
+					<p class="lead my-3 text_margin3 " style="color: rgb(255, 255, 255);">
+						해보세요
+					</p>
+				</div>
+			</div>
+
+			<div class="row mb-2">
+				<div class="col-md-4">
+					<div
+						class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-100 position-relative"
+					>
+						<div style = "margin: 30px 30px 30px 0px"class="box2 float1 col p-4 d-flex flex-column position-static">
+							<h3 style = "margin: 20px 0px 0px 20px" class="mb-0 ">경력</h3>
+							<a href="#career" style = "margin: 20px 0px 0px 20px" class="stretched-link">자세히 보기</a>
+
+						</div>
+						<div style = "margin: 30px 30px 30px 0px" class=" box2 float1 col p-4 d-flex flex-column position-static">
+							<h3 style = "margin: 20px 0px 0px 20px" class="mb-0 ">취미</h3>
+							<a href="#hobby" style = "margin: 20px 0px 0px 20px" class="stretched-link">자세히 보기</a>
+						</div>
+						<div style = "margin: 30px 30px 30px 0px" class="box2 float1 col p-4 d-flex flex-column position-static">
+							<h3 style = "margin: 20px 0px 0px 20px" class="mb-0 ">기타</h3>
+							<a href="#etc" style = "margin: 20px 0px 0px 20px" class="stretched-link">자세히 보기</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/><br/>
+
+			
+			<div class="row g-5">
+				<div class="col-md-8">
+					<article id="experience" class="bootstrap-post">
+						<h2 class="bootstrap-post-title mb-1">　 </h2>
+					</article>
+
+					<article id="test" class="bootstrap-post">
+						<h2 class="bootstrap-post-title mb-1">　</h2>
+					</article>
+
+
+					<article id="career" class="bootstrap-post">
+						<h2 class="bootstrap-post-title mb-1">🧳 경력</h2>
+						<h3 class="box">리스트 사용하기</h3>
+						<p>UL을 활용하여 리스트를 표현해보세요</p>
+						<ul> 
+							<li>첫번째</li>
+							<li>두번째</li>
+							<li>세번째</li>
+						</ul>
+
+						<p>OL을 활용하여 리스트를 표현해보세요</p>
+						<ol> 
+							<li>첫번째</li>
+							<li>두번째</li>
+							<li>세번째</li>
+						</ol>
+
+						<p>DL을 활용하여 리스트를 표현해보세요</p>
+						<dl>
+							<dt> <strong>HyperText Markup Language (HTML) </strong> 
+								<br/>HTML이란?</dt>
+							<dt> <strong>Cascading Style Sheets (CSS) </strong> 
+								<br/>CSS란?</dt>
+							<dt><strong>JavaScript (JS)</strong> 
+								<br/>JS란?</dt>
+						</dl>	
+
+
+						
+						<article id="hobby" class="bootstrap-post">
+						<h2 class="bootstrap-post-title mb-1">🧗🏻‍♀️ 취미</h2>
+						<h3>헤딩 활용하기</h3>
+						<p>div 요소는 플로우 콘텐츠를 위한 통용 컨테이너입니다. CSS로 꾸미기 전에는 콘텐츠나 레이아웃 <br/> 에 어떤 영향도 주지 않습니다.</p>
+						<h3>서브 헤딩</h3>
+						<p>P 요소는 하나의 문단을 나타냅니다. 시각적인 매체에서, 문단은 보통 인접 블록과의 여백과 첫 줄<br/>의 들여쓰기로 구분하지만, HTML에서 문단은 이미지나 입력 폼 등 서로 관련있는 콘텐츠 무엇이<br/>나 될 수 있습니다. </p>
+						
+					</article>
+
+					<article id="etc" class="bootstrap-post">
+						<h2 class="bootstrap-post-title mb-1">😀 기타</h2>
+						<h3>아직 더 표현하고 싶은게 있으신가요?</h3>
+						<p>아직도<mark>다양한 태그</mark>들이 남았답니다.</p>
+						<p>
+							<a
+								href="https://developer.mozilla.org/ko/docs/Web/HTML/Element"
+								target="_blank"
+								>여기에서</a
+							>
+							더 다양한 태그들을 확인해보시고 간단하게 사용해보세요
+						</p>
+						<p>
+							이미 만들어진 간단한 부트스트랩 스타일을 사용하고 싶다면?
+							<a href="https://getbootstrap.com" target="_blank">
+								부스트스트랩 문서를 참고해보세요
+							</a>
+						</p>
+					</article>
+				</div>
+
+				<div class="col-md-4">
+					<div class="absolute position-sticky" style="top: 2rem">
+						<div class="box3 p-4 mb-3 bg-light rounded" style="background-color: rgb(247, 245, 245);">
+							<h4 style="margin:10px 0px 5px 10px"> About</h4>
+							<p style="margin:10px 0px 5px 10px" >
+							저에 대해 더 궁금하신가요? 자세히 </br>
+							알고 싶다면 아래의 소셜을 확인해주</br> 세요
+							</p>
+						</div>
+
+						<div class="p-4">
+							<h4 style="margin-bottom:0px">Social</h4>
+							<p style="margin:0px" >
+								
+								<a href="facebook.com">페이스북</a> </br>
+								<a href="instagram.com">인스타그램</a> </br>
+								<a href="mailto:yourname@example.com">메일 보내기</a> </br>
+								<a href="tel:01050923570">전화 걸기</a>
+
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+				  <img src="https://cdn.crowdpic.net/list-thumb/thumb_l_4291713E6EC8D22461618B2107D30880.jpg" alt="Slide 1">
+				
+		</main>
+
+		<footer class="bootstrap-footer foot_box" style="background-color: rgb(221, 230, 227);">
+			<center>
+			<p>
+				template built for
+				<a href="https://getbootstrap.com/">Bootstrap</a>
+			</p>
+			<p>
+				<a href="#">Back to top</a>
+			</p>
+		</center>
+		</footer>
+	</div>
+			
+	<button id="popupBtn">Open Popup</button>
+
+<div id="popup" class="hide">
+<h1>Welcome to My Popup!</h1>
+<p>Here is some sample text.</p>
+<button id="closeBtn">Close</button>
+</div>
+	</body>
+</html>
