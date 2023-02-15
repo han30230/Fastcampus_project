@@ -153,11 +153,31 @@
 		font-size: 24px;
 		cursor: pointer;
 		}
+	
+ 		 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+		  p {
+  font-family: "Montserrat", sans-serif;
+}
+ 
+.regular {
+  font-weight: 400;
+}
+ 
+.medium {
+  font-weight: 500;
+}
+ 
+.bold {
+  font-weight: 700;
+}
 	</style>
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
 		<link rel="icon" href="icons8-favorite-64.png" type="image/x-icon">
 		<link rel="shortcut icon" href="icons8-favorite-64.png" type="image/x-icon">
-		
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 		<meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -177,7 +197,17 @@
 		<link rel="stylesheet" />
 
 		<link rel="icon" />
+		<title>Google Fonts</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
 	</head>
+
 	<body class=" box_text">
 		<div class="box_test">
 			<header class="bootstrap-header lh-1 py-3">
@@ -200,7 +230,7 @@
 						<div class="text_margin1" style="color: rgb(255, 255, 255); ">Bootstrap을 활용해 퍼스널 </div>
 						<div class="text_margin2" style="color: rgb(255, 255, 255); ">브랜딩 페이지 만들기 </div>
 					</h1>
-					<p class="lead my-3 text_margin3 " style="color: rgb(255, 255, 255);">
+					<p  class="lead my-3 text_margin3 " style="color: rgb(255, 255, 255);">
 						다양한 태그와 라이브러리를 사용하여 자유롭게 표현
 					</p>
 					<p class="lead my-3 text_margin3 " style="color: rgb(255, 255, 255);">
@@ -247,7 +277,8 @@
 					<article id="career" class="bootstrap-post">
 						<h2 class="bootstrap-post-title mb-1">🧳 경력</h2>
 						<h3 class="box">리스트 사용하기</h3>
-						<p>UL을 활용하여 리스트를 표현해보세요</p>
+						<p style="font-family: 'Noto Sans', sans-serif;" >
+							(부트스트랩 디자인 및 애니메이션 적용) </br>UL을 활용하여 리스트를 표현해보세요</p>
 						<ul> 
 							<li>첫번째</li>
 							<li>두번째</li>
@@ -317,8 +348,8 @@
 							<h4 style="margin-bottom:0px">Social</h4>
 							<p style="margin:0px" >
 								
-								<a href="facebook.com">페이스북</a> </br>
-								<a href="instagram.com">인스타그램</a> </br>
+								<a href="https://facebook.com">페이스북</a> </br>
+								<a href="https://instagram.com">인스타그램</a> </br>
 								<a href="mailto:yourname@example.com">메일 보내기</a> </br>
 								<a href="tel:01050923570">전화 걸기</a>
 
@@ -347,12 +378,40 @@
 		</footer>
 	</div>
 			
-	<button id="popupBtn">Open Popup</button>
+	<button id="popupBtn">버튼 추가</button>
+
+	<body>
+		<p class="regular">다른 글씨체</p>
+		<p class="medium">Montserrat Medium 글씨체</p>
+		<p class="bold">Montserrat Bold 700</p>
+	  </body>
 
 <div id="popup" class="hide">
 <h1>Welcome to My Popup!</h1>
 <p>Here is some sample text.</p>
 <button id="closeBtn">Close</button>
 </div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="#">부트스트랩</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+		  <a class="nav-link" href="#">부트스트랩</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">디자인</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">적용</a>
+		</li>
+	  </ul>
+	</div>
+  </nav>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 	</body>
+	
 </html>
